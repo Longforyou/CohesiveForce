@@ -2,13 +2,13 @@
 This is the place for downloading Python scripts for fitting experimental organic PDF and fitting T-dep ADPs with a Debye model.
 
 ## PDF model fit 
-The PDF model fit on organic PDF follows Prill's Journal of Applied Crystallography paper (http://scripts.iucr.org/cgi-bin/paper?S1600576714026454) and uses mefenamic acid PDF as an example. The data was colllected at 300 K at beamline 11-ID-B at Argonne National Laboratory. The Qmax used is 24 1/A; and the r-range is 40 A. 
+The PDF model fit on organic PDF follows Prill's Journal of Applied Crystallography paper (http://scripts.iucr.org/cgi-bin/paper?S1600576714026454) and uses PDF of mefenamic acid (MEF) as an example. The data was colllected at 300 K at beamline 11-ID-B at Argonne National Laboratory. The Qmax used is 24 1/A; and the r-range is 1-40 A. 
 
 To use the scripts, download the codes <b>bin</b> and <b>data</b> located at <b>CohesiveForce/PDF_FIT_MEF/</b> to a local folder. Make sure you have installed DiffPy-CMI (http://www.diffpy.org/products/diffpycmi/). In a terminal, after <b>source activate py27</b>, navigate into <b>bin</b> and type 
 
 <b>python MEF_300K.py</b> 
 
-to start the run. It takes a couple of minutes to run the code; the end result is a fit that looks like something below. 
+to start the run. It takes a couple of minutes to run the code on my computer; the end result is a fit that looks like something below. 
 
 ![300k_fit](https://user-images.githubusercontent.com/8492535/32331660-7a2418da-bfb1-11e7-8889-0811476c92bc.png)
 
