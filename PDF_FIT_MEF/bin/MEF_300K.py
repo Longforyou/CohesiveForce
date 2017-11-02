@@ -49,7 +49,6 @@ def makeRecipe(stru1, stru2, stru3, datname):
     #G_MEF_Intra gives intramolecular PDF, using a smaller atomic displacement parameter.
     #The sum of both parts gives the total PDF.
     contribution.setEquation("scale * (G_MEF_Cryst_B - G_MEF_Mole_B + G_MEF_Intra)")
-    #contribution.setEquation("scale * G_MEF_Mole_B ")
 
     # Make the FitRecipe and add the FitContribution.
     recipe = FitRecipe()
@@ -117,8 +116,7 @@ def makeRecipe(stru1, stru2, stru3, datname):
    # Constrain fractional xyz parameters
     atoms = phase_MEF_Mole_B.getScatterers()
    # Constrain ADPs
-    #recipe.newVar("Uiso_Inter", 0.05, tag = "T2") 
-    
+
     for atom in atoms:
     	if atom.element.title() == "C":
              recipe.constrain(atom.Uiso, "Uiso_Inter")
@@ -172,7 +170,6 @@ def makeRecipe(stru1, stru2, stru3, datname):
 def plotResults(recipe):
     """Plot the results contained within a refined FitRecipe."""
 
-    # All this should be pretty familiar by now.
     r = recipe.MEF.profile.x
 
     g = recipe.MEF.profile.y
