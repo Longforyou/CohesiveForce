@@ -24,6 +24,6 @@ to start the fit. In the end, one may get a fit plot similar to
 
 For a new organic compound, in <b>debye_model.py</b>, modify line 17 to specify the molecular weight of the new molecule; line 31 to load new ADP values; and line 49 to change the name of the saved file. Optionally you may change <b>MEF</b> to your compound's acronym. 
 
-<b>Note</b>: the code is written for Python 2.7 environment. I suggest stay at py27 environment after PDF model fit; and run this Debye model fit code. 
+<b>Note</b>: the code is written for Python 2.7 environment. I suggest stay at py27 environment after PDF model fit; and run this code for Debye model fit. 
 
 
